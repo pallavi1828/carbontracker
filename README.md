@@ -1,8 +1,4 @@
-Here’s your **final, cleaned-up `README.md`** file — ready to copy-paste into your project:
 
----
-
-```markdown
 # 🌱 CarbonTracker
 
 **CarbonTracker** is a secure, scalable Spring Boot backend application designed to track and manage user data related to carbon footprints and sustainable practices. It provides RESTful APIs with JWT-based authentication, clean architecture, and modular code for easy maintenance and integration.
