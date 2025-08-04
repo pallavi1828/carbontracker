@@ -1,3 +1,8 @@
+Here’s your **final, cleaned-up `README.md`** file — ready to copy-paste into your project:
+
+---
+
+```markdown
 # 🌱 CarbonTracker
 
 **CarbonTracker** is a secure, scalable Spring Boot backend application designed to track and manage user data related to carbon footprints and sustainable practices. It provides RESTful APIs with JWT-based authentication, clean architecture, and modular code for easy maintenance and integration.
@@ -16,7 +21,7 @@
 
 ## 🛠️ Technologies Used
 
-- **Java **
+- **Java 17**
 - **Spring Boot**
 - **Spring Security**
 - **JWT (JSON Web Tokens)**
@@ -25,20 +30,26 @@
 
 ---
 
-## 📁 Project Structure
+## 📂 Project Structure
+
+```
+
 carbontracker/
-├── config/ # Spring Security configuration
-├── controller/ # REST APIs (Auth, User)
-├── entity/ # JPA entities (User)
-├── exception/ # Custom exception classes
-├── model/ # DTOs (AuthRequest, AuthResponse)
-├── repository/ # JPA repository interfaces
-├── security/ # JWT filters and utilities
+├── config/           # Spring Security configuration
+├── controller/       # REST APIs (Auth, User)
+├── entity/           # JPA entities (User)
+├── exception/        # Custom exception classes
+├── model/            # DTOs (AuthRequest, AuthResponse)
+├── repository/       # JPA repository interfaces
+├── security/         # JWT filters and utilities
 ├── service/
-│ ├── impl/ # Service implementations
-│ └── # Service interfaces
-└── resources/
-└── application.properties
+│   ├── impl/         # Service implementations
+│   └──               # Service interfaces
+├── resources/
+│   └── application.properties
+
+````
+
 ---
 
 ## 🧪 Running the Application
@@ -55,5 +66,23 @@ mvn clean install
 
 # Run the application
 mvn spring-boot:run
+````
+
 By default, the backend runs on:
-📍 http://localhost:8080
+🔗 [http://localhost:8080](http://localhost:8080)
+
+---
+
+## ✅ API Endpoints (Sample)
+
+| Method | Endpoint         | Description             |
+| ------ | ---------------- | ----------------------- |
+| POST   | `/auth/login`    | Authenticate user       |
+| POST   | `/auth/register` | Register new user       |
+| GET    | `/users`         | Get all users (secured) |
+| GET    | `/users/{id}`    | Get user by ID          |
+| PUT    | `/users/{id}`    | Update user info        |
+| DELETE | `/users/{id}`    | Delete user             |
+
+---
+
